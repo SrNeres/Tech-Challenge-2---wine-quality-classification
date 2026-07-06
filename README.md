@@ -36,19 +36,18 @@ O conjunto de dados contém informações físico-químicas de amostras de vinho
 wine-quality-classification/
 │
 ├── data/
-│   └── wine_quality.csv
+│   └── WineQT.csv
 │
 ├── notebooks/
-│   └── wine_quality_classification.ipynb
+│   └── classificacao_de_vinhos.ipynb
 │
 ├── results/
-│   ├── matriz_confusao_arvore.png
-│   ├── matriz_confusao_svm.png
-│   ├── importancia_variaveis_arvore.png
-│   └── tabela_resultados_modelos.csv
+│   ├── matriz_correlacao.png
+│   ├── matriz_confusao SVM.png
+│   ├── distribuicao_classes.png
 │
 ├── src/
-│   └── utils.py
+│   └── 
 │
 ├── presentation/
 │   └── apresentacao_executiva.pdf
