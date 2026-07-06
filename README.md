@@ -74,7 +74,7 @@ O projeto foi desenvolvido seguindo as principais etapas de uma pipeline de Mach
 11. Desenvolvimento dos modelos;
 12. Avaliação e comparação dos modelos;
 13. Interpretação dos resultados;
-14. Conclusão e limitações.
+14. Conclusão.
 
 ## 5. Análise exploratória dos dados
 
@@ -113,7 +113,7 @@ Foi utilizada uma versão regularizada do modelo para reduzir o risco de overfit
 
 ### Support Vector Machine — SVM
 
-O SVM foi utilizado como segundo modelo de classificação, com kernel RBF, buscando uma fronteira não linear para separação entre as classes.
+O SVM foi utilizado como segundo modelo de classificação.
 
 Como o SVM é sensível à escala das variáveis, os dados foram padronizados antes do treinamento.
 
@@ -157,69 +157,7 @@ Entre os modelos avaliados, a Árvore de Decisão regularizada apresentou melhor
 
 Entretanto, os resultados também indicam limitações. A precisão da classe de alta qualidade ainda foi baixa, o que significa que parte dos vinhos previstos como de alta qualidade pertencia, na realidade, à classe de baixa/média qualidade.
 
-Dessa forma, o modelo deve ser interpretado como uma ferramenta de apoio à decisão, e não como substituto da avaliação sensorial e do conhecimento técnico de especialistas.
-
-## 11. Limitações e melhorias futuras
-
-Entre as principais limitações do projeto estão:
-
-* desbalanceamento da variável-alvo;
-* baixa quantidade de vinhos de alta qualidade no conjunto de teste;
-* uso de oversampling aleatório, que duplica registros da classe minoritária;
-* ausência de variáveis sensoriais ou informações adicionais sobre o processo produtivo;
-* possibilidade de ajuste mais refinado dos hiperparâmetros.
-
-Como melhorias futuras, poderiam ser testadas:
-
-* validação cruzada;
-* GridSearchCV para otimização de hiperparâmetros;
-* técnicas alternativas de balanceamento, como SMOTE;
-* outros algoritmos de classificação;
-* comparação entre modelos com e sem tratamento de outliers;
-* inclusão de novas variáveis relacionadas à produção e avaliação sensorial.
-
-## 12. Como executar o projeto
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/wine-quality-classification.git
-```
-
-Acesse a pasta do projeto:
-
-```bash
-cd wine-quality-classification
-```
-
-Instale as dependências:
-
-```bash
-pip install -r requirements.txt
-```
-
-Abra o Jupyter Notebook:
-
-```bash
-jupyter notebook
-```
-
-Execute o notebook localizado em:
-
-```text
-notebooks/wine_quality_classification.ipynb
-```
-
-## 13. Tecnologias utilizadas
-
-* Python
-* Pandas
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Jupyter Notebook
-
-## 14. Referências
+## 11. Referências
 
 * Wine Quality Dataset — Kaggle
 * Cortez et al. — Modeling wine preferences by data mining from physicochemical properties
